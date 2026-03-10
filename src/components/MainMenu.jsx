@@ -5,7 +5,6 @@ const menuItems = [
   { id: 2, name: 'Laptop', href: '/laptop', icon: '💻' },
   { id: 3, name: 'Phụ kiện', href: '/phu-kien', icon: '🎧', hasMega: true },
   { id: 4, name: 'Smartwatch', href: '/dong-ho-thong-minh', icon: '⌚' },
-  { id: 5, name: 'Đồng hồ', href: '/dong-ho', icon: '👔' },
   { id: 6, name: 'Tablet', href: '/may-tinh-bang', icon: '📲' },
   { id: 7, name: 'Máy cũ', href: '/may-doi-tra', icon: '🔄' },
   { id: 8, name: 'Màn hình', href: '/man-hinh', icon: '🖥️' },

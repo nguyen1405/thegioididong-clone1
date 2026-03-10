@@ -13,8 +13,8 @@ function ProductCard({ product }) {
   } = product || {};
 
   return (
-    <div className="product-item group">
-      <a href="/" className="block bg-white border border-gray-100 rounded-lg p-4 hover:shadow-xl hover:border-primary/30 transition-all duration-300">
+    <div className="product-item group h-full flex flex-col">
+      <a href="/" className="block bg-white border border-gray-100 rounded-lg p-4 hover:shadow-xl hover:border-primary/30 transition-all duration-300 flex-grow">
         {/* Badge */}
         {badge && (
           <div className="mb-2">
