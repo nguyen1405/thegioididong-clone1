@@ -1,6 +1,8 @@
 import Header from '../components/Header';
 import BannerSlider from '../components/BannerSlider';
-import CategoryList from '../components/CategoryList';
+import BannerPromotion from '../components/BannerPromotion';
+import VendorSection from '../components/VendorSection';
+// import CategoryList from '../components/CategoryList';
 import ProductTabs from '../components/ProductTabs';
 import ProductList from '../components/ProductList';
 import Footer from '../components/Footer';
@@ -12,10 +14,16 @@ function Home() {
 
       <main className="container mx-auto px-4 py-6">
         <BannerSlider />
-        <CategoryList />
+        {/* <CategoryList /> */}
         
         {/* Product Tabs - Flash Sale + Danh mục */}
         <ProductTabs />
+        
+        {/* Lễ hội trả chậm */}
+        <BannerPromotion />
+        
+        {/* Gian hàng ưu đãi */}
+        <VendorSection />
         
         {/* Các danh sách sản phẩm khác */}
         <ProductList title="Điện thoại nổi bật" />

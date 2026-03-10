@@ -8,8 +8,8 @@ import 'swiper/css/pagination';
 const banners = [
   {
     id: 1,
-    image: 'https://cdnv2.tgdd.vn/mwg-static/tgdd/2024/11/25/banner-laptop-1200x260-202411250325475678.jpg',
-    alt: 'Laptop khuyến mãi',
+    image:  'http://cdnv2.tgdd.vn/mwg-static/tgdd/Banner/1c/7a/1c7adc0b32fcc852355683a530cb2376.png'  ,
+    alt: 'Khuyến mãi lớn',
     bgColor: '#e8f5e9'
   },
   {

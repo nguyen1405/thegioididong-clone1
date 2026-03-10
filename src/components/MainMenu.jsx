@@ -9,7 +9,7 @@ const menuItems = [
   { id: 6, name: 'Tablet', href: '/may-tinh-bang', icon: '📲' },
   { id: 7, name: 'Máy cũ', href: '/may-doi-tra', icon: '🔄' },
   { id: 8, name: 'Màn hình', href: '/man-hinh', icon: '🖥️' },
-  { id: 9, name: 'Sim, Thẻ', href: '/sim-the', icon: '�卡' },
+  { id: 9, name: 'Sim, Thẻ', href: '/sim-the', icon: '📶' },
   { id: 10, name: 'Tiện ích', href: '/tien-ich', icon: '⚡' },
 ];
 

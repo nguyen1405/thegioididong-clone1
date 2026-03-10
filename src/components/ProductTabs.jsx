@@ -14,8 +14,8 @@ const tabs = [
 
 const mockProducts = {
   flashsale: [
-    { id: 1, name: 'Samsung Galaxy A17 5G 8GB/256GB', price: '6.240.000đ', oldPrice: '7.090.000đ', discount: 11, stock: { sold: 45, total: 100 }, badge: { type: 'sale' } },
-    { id: 2, name: 'iPhone 15 128GB', price: '19.990.000đ', oldPrice: '22.990.000đ', discount: 13, stock: { sold: 78, total: 100 }, badge: { type: 'sale' } },
+    { id: 1, name: 'Samsung Galaxy A17 5G 8GB/256GB', price: '6.240.000đ', oldPrice: '7.090.000đ', discount: 11, stock: { sold: 45, total: 100 }, badge: { type: 'sale' },     image: 'https://cdn.tgdd.vn/Products/Images/42/341690/galaxy-a17-5g-blue-thumbai-600x600.jpg'},
+    { id: 2, name: 'iPhone 15 128GB', price: '19.990.000đ', oldPrice: '22.990.000đ', discount: 13, stock: { sold: 78, total: 100 }, badge: { type: 'sale' } , image: "https://cdn.tgdd.vn/Products/Images/42/303891/iphone-15-plus-128gb-den-thumb-600x600.jpg"},
     { id: 3, name: 'OPPO Reno12 F 5G', price: '8.990.000đ', oldPrice: '10.990.000đ', discount: 18, stock: { sold: 32, total: 100 }, badge: { type: 'sale' } },
     { id: 4, name: 'Xiaomi Redmi Note 13 Pro', price: '7.490.000đ', oldPrice: '8.990.000đ', discount: 17, stock: { sold: 56, total: 100 }, badge: { type: 'sale' } },
     { id: 5, name: 'vivo Y28s 5G', price: '5.490.000đ', oldPrice: '6.490.000đ', discount: 15, stock: { sold: 89, total: 100 }, badge: { type: 'sale' } },
@@ -73,7 +73,7 @@ const mockProducts = {
 
 function ProductTabs() {
   const [activeTab, setActiveTab] = useState('flashsale');
-  const [countdown, setCountdown] = useState({ hours: 2, minutes: 59, seconds: 59 });
+  const [countdown, setCountdown] = useState({ hours: 3, minutes: 59, seconds: 59 });
 
   return (
     <div className="product-section py-6">
