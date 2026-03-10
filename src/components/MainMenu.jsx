@@ -1,15 +1,16 @@
 import { useState } from 'react';
+import { Smartphone, Laptop, Headphones, Watch, Tablet, RefreshCw, Monitor, Signal, Zap } from 'lucide-react';
 
 const menuItems = [
-  { id: 1, name: 'Điện thoại', href: '/dtdd', icon: '📱' },
-  { id: 2, name: 'Laptop', href: '/laptop', icon: '💻' },
-  { id: 3, name: 'Phụ kiện', href: '/phu-kien', icon: '🎧', hasMega: true },
-  { id: 4, name: 'Smartwatch', href: '/dong-ho-thong-minh', icon: '⌚' },
-  { id: 6, name: 'Tablet', href: '/may-tinh-bang', icon: '📲' },
-  { id: 7, name: 'Máy cũ', href: '/may-doi-tra', icon: '🔄' },
-  { id: 8, name: 'Màn hình', href: '/man-hinh', icon: '🖥️' },
-  { id: 9, name: 'Sim, Thẻ', href: '/sim-the', icon: '📶' },
-  { id: 10, name: 'Tiện ích', href: '/tien-ich', icon: '⚡' },
+  { id: 1, name: 'Điện thoại', href: '/dtdd', icon: Smartphone },
+  { id: 2, name: 'Laptop', href: '/laptop', icon: Laptop },
+  { id: 3, name: 'Phụ kiện', href: '/phu-kien', icon: Headphones, hasMega: true },
+  { id: 4, name: 'Smartwatch', href: '/dong-ho-thong-minh', icon: Watch },
+  { id: 6, name: 'Tablet', href: '/may-tinh-bang', icon: Tablet },
+  { id: 7, name: 'Máy cũ', href: '/may-doi-tra', icon: RefreshCw },
+  { id: 8, name: 'Màn hình', href: '/man-hinh', icon: Monitor },
+  { id: 9, name: 'Sim, Thẻ', href: '/sim-the', icon: Signal },
+  { id: 10, name: 'Tiện ích', href: '/tien-ich', icon: Zap },
 ];
 
 const megaMenuData = {
@@ -64,7 +65,7 @@ function MainMenu() {
                 href={item.href}
                 className="flex items-center gap-2 px-3 py-2 text-sm font-medium text-neutral-dark hover:text-primary transition-colors"
               >
-                <span>{item.icon}</span>
+                <item.icon size={18} />
                 <span>{item.name}</span>
               </a>
 

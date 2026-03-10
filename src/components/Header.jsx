@@ -20,7 +20,7 @@ function Header() {
           </a>
           
           {/* Search */}
-          <div className="flex-1 mx-8 max-w-xl">
+          <div className="flex-1 mx-8 max-w-x1">
             <form className="relative">
               <input
                 type="text"
