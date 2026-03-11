@@ -1,7 +1,31 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function Header() {
   const [activeMenu, setActiveMenu] = useState(null);
+  const [showMenu, setShowMenu] = useState(true);
+
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY <= 20) {
+        setShowMenu(true);
+      } else if (currentScrollY > lastScrollY) {
+        // scroll down
+        setShowMenu(false);
+      } else {
+        // scroll up
+        setShowMenu(true);
+      }
+
+      lastScrollY = currentScrollY;
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const menuItems = [
     { id: 1, name: 'Điện thoại', href: '/dtdd', icon: 'https://cdn.tgdd.vn/content/phonne-24x24.png', hasMega: false },
@@ -163,7 +187,10 @@ function Header() {
         </div>
 
         {/* Main Menu - Yellow Bar */}
-        <div className="header__main" onMouseLeave={() => setActiveMenu(null)}>
+        <div
+          className={`header__main ${showMenu ? 'visible' : 'hidden'}`}
+          onMouseLeave={() => setActiveMenu(null)}
+        >
           <div>
             <ul className="main-menu">
               {menuItems.map((item) => (
