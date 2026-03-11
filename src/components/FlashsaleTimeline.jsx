@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 const timelineData = [
   {
     id: 'happening',
-    label: 'Chỉ còn:',
+    label: 'Đang diễn ra',
     time: '21:30',
     isHappening: true,
     endTime: new Date('2026-03-10T21:30:00')
@@ -11,45 +11,44 @@ const timelineData = [
   {
     id: 'soon',
     label: 'Sắp diễn ra',
-    time: '21:30',
+    time: '00:00',
     isHappening: false
   },
   {
     id: 'tomorrow1',
     label: 'Ngày mai',
-    time: '00:00',
+    time: '09:00',
     isHappening: false
   },
   {
     id: 'tomorrow2',
     label: 'Ngày mai',
-    time: '09:00',
+    time: '12:00',
     isHappening: false
   },
   {
     id: 'tomorrow3',
     label: 'Ngày mai',
-    time: '12:00',
+    time: '15:00',
     isHappening: false
   }
 ];
 
 function FlashsaleTimeline({ activeTimeline = 'happening', onTimelineChange }) {
-  const [timeLeft, setTimeLeft] = useState({ hours: 0, minutes: 0, seconds: 0 });
+  const [timeLeft, setTimeLeft] = useState({ hours: 1, minutes: 30, seconds: 0 });
 
   useEffect(() => {
-    const targetDate = new Date('2026-03-10T21:30:00');
-
     const timer = setInterval(() => {
-      const now = new Date();
-      const diff = targetDate - now;
-
-      if (diff > 0) {
-        const hours = Math.floor(diff / (1000 * 60 * 60));
-        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-        setTimeLeft({ hours, minutes, seconds });
-      }
+      setTimeLeft((prev) => {
+        if (prev.seconds > 0) {
+          return { ...prev, seconds: prev.seconds - 1 };
+        } else if (prev.minutes > 0) {
+          return { ...prev, minutes: prev.minutes - 1, seconds: 59 };
+        } else if (prev.hours > 0) {
+          return { ...prev, hours: prev.hours - 1, minutes: 59, seconds: 59 };
+        }
+        return prev;
+      });
     }, 1000);
 
     return () => clearInterval(timer);
@@ -58,33 +57,44 @@ function FlashsaleTimeline({ activeTimeline = 'happening', onTimelineChange }) {
   const formatNumber = (num) => String(num).padStart(2, '0');
 
   return (
-    <div className="timeline-title">
+    <div className="flashsale-timeline">
       <div className="timeline-wrapper">
-        <div className="listing-timeline col5 full">
-        {timelineData.map((item) => (
-          <a
-            key={item.id}
-            href="javascript:;"
-            className={`${activeTimeline === item.id ? 'active endtime' : 'new'} ${item.isHappening && activeTimeline === item.id ? 'endtime' : ''}`}
-            onClick={() => onTimelineChange && onTimelineChange(item.id)}
-          >
-            {item.isHappening && activeTimeline === item.id ? (
-              <>
-                <span className="title-end">Chỉ còn: <br /></span>
-                <span className="countdown-timer">
-                  <label id="hour">{formatNumber(timeLeft.hours)}</label>
-                  <label id="minute">{formatNumber(timeLeft.minutes)}</label>
-                  <label id="second">{formatNumber(timeLeft.seconds)}</label>
-                </span>
-              </>
-            ) : (
-              <>
-                <span>{item.label}</span>
-                <span>{item.time}</span>
-              </>
-            )}
-          </a>
-        ))}
+        <div className="listing-timeline">
+          {timelineData.map((item) => (
+            <a
+              key={item.id}
+              href="javascript:;"
+              className={`timeline-item ${activeTimeline === item.id ? 'active' : ''} ${item.isHappening ? 'happening' : ''}`}
+              onClick={() => onTimelineChange && onTimelineChange(item.id)}
+            >
+              {item.isHappening && activeTimeline === item.id ? (
+                <>
+                  <span className="timeline-label">Kết thúc trong</span>
+                  <span className="countdown-timer">
+                    <span className="time-block">
+                      <label>{formatNumber(timeLeft.hours)}</label>
+                      <small>Giờ</small>
+                    </span>
+                    <span className="time-separator">:</span>
+                    <span className="time-block">
+                      <label>{formatNumber(timeLeft.minutes)}</label>
+                      <small>Phút</small>
+                    </span>
+                    <span className="time-separator">:</span>
+                    <span className="time-block">
+                      <label>{formatNumber(timeLeft.seconds)}</label>
+                      <small>Giây</small>
+                    </span>
+                  </span>
+                </>
+              ) : (
+                <>
+                  <span className="timeline-label">{item.label}</span>
+                  <span className="timeline-time">{item.time}</span>
+                </>
+              )}
+            </a>
+          ))}
         </div>
       </div>
     </div>

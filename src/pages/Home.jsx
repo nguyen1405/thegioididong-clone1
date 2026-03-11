@@ -16,7 +16,6 @@ function Home() {
       <Header />
       
       <main>
-        <Banner />
         <div className="container-custom">
           <HotPromotion />
           <WebOnly />

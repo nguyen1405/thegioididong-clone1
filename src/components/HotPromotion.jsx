@@ -131,7 +131,7 @@ function HotPromotion() {
               
               <div className="box-scroll">
                 <div className="listproduct slider-flashsale">
-                  {sampleProducts.map((product, index) => (
+                  {sampleProducts.map((product) => (
                     <ProductCard key={product.id} product={product} />
                   ))}
                 </div>

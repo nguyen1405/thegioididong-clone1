@@ -1,3 +1,5 @@
+import { useRef } from 'react';
+
 const webOnlyItems = [
   {
     id: 1,
@@ -40,29 +42,63 @@ const webOnlyItems = [
     image: 'https://cdnv2.tgdd.vn/mwg-static/common/Campaign/2d/2e/2d2ea1b0e5a8217305f6e58b30497d74.png',
     description: 'Chiến Game Đỉnh  Săn Deal Hời',
     url: 'https://www.thegioididong.com/khuyen-mai-corsair'
+  },
+  {
+    id: 8,
+    image: 'https://cdnv2.tgdd.vn/mwg-static/common/Campaign/3b/32/3b324369446604e2db060cc4b6e460e8.gif',
+    description: 'Ưu Đãi Mở Bán!',
+    url: 'https://www.thegioididong.com/khuyen-mai-campaign'
+  },
+  {
+    id: 9,
+    image: 'https://cdnv2.tgdd.vn/mwg-static/common/Campaign/dd/d0/ddd0e3f4f115cc55463f447c58e4ee65.png',
+    description: 'Trạm Sắc Màu Bảo Hành 2 Năm',
+    url: 'https://www.thegioididong.com/khuyen-mai-micropack'
   }
 ];
 
 function WebOnly() {
+  const scrollRef = useRef(null);
+
+  const scroll = (direction) => {
+    if (scrollRef.current) {
+      const scrollAmount = direction === 'left' ? -260 : 260;
+      scrollRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="web-only">
       <div className="container-custom">
         <h2 className="web-only__title">Mua Online - Hàng chuẩn, giá mê</h2>
-        <div className="web-only__list">
-          {webOnlyItems.map((item) => (
-            <div key={item.id} className="web-only__item">
-              <a href={item.url} className="web-only__image">
-                <img 
-                  className="web-only__product-image" 
-                  src={item.image} 
-                  alt={item.description}
-                />
-              </a>
-              <div className="web-only__description">
-                <span>{item.description}</span>
+        <div className="web-only__wrapper">
+          <button className="web-only__nav web-only__nav--prev" onClick={() => scroll('left')}>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <polyline points="15 18 9 12 15 6" />
+            </svg>
+          </button>
+          <div className="web-only__list" ref={scrollRef}>
+            {webOnlyItems.map((item) => (
+              <div key={item.id} className="web-only__item">
+                <a href={item.url} className="web-only__image">
+                  <img 
+                    className="web-only__product-image" 
+                    src={item.image} 
+                    alt={item.description}
+                    loading="lazy"
+                  />
+                </a>
+                <div className="web-only__description">
+                  <span>{item.description}</span>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+          <button className="web-only__nav web-only__nav--next" onClick={() => scroll('right')}>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </button>
         </div>
       </div>
     </section>

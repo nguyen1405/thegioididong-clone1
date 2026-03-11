@@ -89,30 +89,18 @@ function Header() {
 
   return (
     <header className="header-wrapper">
-      {/* Banner Top */}
-      <div className="header-top-bar">
-        <div className="banner-media" style={{ backgroundColor: '#FFD400' }}>
-          <a href="https://www.thegioididong.com/mua-online-gia-re">
-            <img 
-              src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Banner/70/c8/70c8bad73e7ef21fd85569fbf0eae4b0.png" 
-              alt="Banner top bar" 
-              width="1200"
-              height="44"
-              loading="lazy"
-            />
-          </a>
-        </div>
-      </div>
-
-      <header className="header v2024 hasbanner" data-sub="0">
+      <header className="header v2024" data-sub="0">
         <div className="header__top">
           <div>
             {/* Logo */}
             <a href="/" className="header__logo" aria-label="logo">
-              <svg viewBox="0 0 170 40" className="logo-svg">
-                <rect x="0" y="0" width="170" height="40" rx="4" fill="#FFD400"/>
-                <text x="85" y="26" textAnchor="middle" fontFamily="Arial, sans-serif" fontSize="20" fontWeight="bold" fill="#fff">TGDD</text>
-              </svg>
+              <img 
+                src="https://cdn.tgdd.vn/content/Logo-TheGioiDiDong-09-09-2024.png" 
+                alt="Thegioididong.com" 
+                width="170" 
+                height="40"
+                className="logo-img"
+              />
             </a>
             
             {/* Search */}
@@ -126,7 +114,7 @@ function Header() {
                 autoComplete="off" 
                 maxLength="100"
               />
-              <button type="submit" aria-label="button suggest search">
+              <button type="submit" className="search-btn" aria-label="button suggest search">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <circle cx="11" cy="11" r="8"/>
                   <path d="m21 21-4.35-4.35"/>
@@ -138,24 +126,27 @@ function Header() {
             {/* Profile - Login */}
             <div className="profile">
               <a href="/lich-su-mua-hang" className="name-order active">
-                <i></i> Đăng nhập
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                  <circle cx="12" cy="7" r="4"/>
+                </svg>
+                <span>Đăng nhập</span>
               </a>
             </div>
             
             {/* Cart */}
             <a href="/cart" className="header__cart menu-info" id="cart-box">
               <div className="box-cart">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <circle cx="8" cy="21" r="1"/>
-                  <circle cx="19" cy="21" r="1"/>
-                  <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#333" strokeWidth="2">
+                  <circle cx="9" cy="21" r="1"/>
+                  <circle cx="20" cy="21" r="1"/>
+                  <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
                 </svg>
-                <span className="cart-number"></span>
+                <span className="cart-number">0</span>
               </div>
-              <span>Giỏ hàng</span>
+              <span className="cart-text">Giỏ hàng</span>
               <div className="view-cart">
-                <span>Đã thêm vào giỏ hàng</span>
-                <b>Xem giỏ hàng</b>
+                <span>Hiện chưa có sản phẩm</span>
               </div>
             </a>
             

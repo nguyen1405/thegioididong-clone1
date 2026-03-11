@@ -16,31 +16,25 @@ function ProductCard({ product }) {
         <h3>{product.name}</h3>
         <strong className="price">
           {formatPrice(product.price)}
-          {product.oldPrice && (
-            <span className="price-and-discount">
-              <label className="price-old black">{formatPrice(product.oldPrice)}</label>
-              <small>-{discountPercent}%</small>
-            </span>
-          )}
         </strong>
+        {product.oldPrice && (
+          <div className="price-discount">
+            <span className="price-old">{formatPrice(product.oldPrice)}</span>
+            <small className="discount-tag">-{discountPercent}%</small>
+          </div>
+        )}
 
         {product.soldQuantity !== undefined && (
           <div className="fs-contain">
-            <img 
-              width="15" 
-              height="15" 
-              src="//cdnv2.tgdd.vn/webmwg/2024/ContentMwg/images/homev2/flash-sale.png" 
-              alt="icon flashsale" 
-            />
             <span className="rq_count fscount">
-              <i style={{ width: `${product.soldQuantity}%` }} className="fs-iconfire"></i>
+              <span className="fs-icon" style={{ background: `linear-gradient(90deg, #F79009 ${product.soldQuantity}%, #e0e0e0 ${product.soldQuantity}%)` }}></span>
               <b>{product.soldLabel}</b>
             </span>
           </div>
         )}
       </a>
       <div className="btn-buy">
-        <a href={product.url} className="see-detail hide">Xem chi tiết</a>
+        <a href={product.url} className="see-detail">Xem chi tiết</a>
         <a href={product.buyUrl} className="buy-now">Mua ngay</a>
       </div>
     </div>

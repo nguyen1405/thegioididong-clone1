@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useRef } from 'react';
 
 const promotionProducts = [
   {
@@ -185,6 +185,15 @@ const promotionProducts = [
 ];
 
 function MonopolyProduct() {
+  const scrollRef = useRef(null);
+
+  const scroll = (direction) => {
+    if (scrollRef.current) {
+      const scrollAmount = direction === 'left' ? -380 : 380;
+      scrollRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="monopoly-product-block">
       <div className="container-custom">
@@ -205,7 +214,12 @@ function MonopolyProduct() {
           </div>
           
           <div className="monopoly-product-slider">
-            <ul className="listproduct">
+            <button className="monopoly-nav monopoly-nav--prev" onClick={() => scroll('left')}>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <polyline points="15 18 9 12 15 6" />
+              </svg>
+            </button>
+            <ul className="listproduct" ref={scrollRef}>
               {promotionProducts.map((product) => (
                 <li key={product.id} className="item">
                   <a href={`/product/${product.id}`} className="main-contain">
@@ -264,6 +278,11 @@ function MonopolyProduct() {
                 </li>
               ))}
             </ul>
+            <button className="monopoly-nav monopoly-nav--next" onClick={() => scroll('right')}>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <polyline points="9 18 15 12 9 6" />
+              </svg>
+            </button>
           </div>
         </div>
       </div>

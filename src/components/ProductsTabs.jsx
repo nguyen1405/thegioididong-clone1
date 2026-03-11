@@ -53,7 +53,7 @@ const productsTabs = [
 function ProductsTabs({ activeTab, onTabChange }) {
   return (
     <ul className="products-tabs col9">
-      {productsTabs.map((tab, index) => (
+      {productsTabs.map((tab) => (
         <li
           key={tab.id}
           className={`fs-new-item ${activeTab === tab.id ? 'active-tab' : ''}`}
