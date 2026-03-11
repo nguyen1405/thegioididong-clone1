@@ -1,5 +1,7 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Banner from '../components/Banner';
+import HotPromotion from '../components/HotPromotion';
 
 function Home() {
   return (
@@ -7,7 +9,8 @@ function Home() {
       <Header />
       
       <main>
-        {/* Content will be added here */}
+        <Banner />
+        <HotPromotion />
       </main>
 
       <Footer />
