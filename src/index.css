@@ -1739,3 +1739,236 @@
     min-width: 70px;
   }
 }
+/* Banner Brand Week */
+.banner-brand-week {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  padding: 15px 0;
+  margin-bottom: 15px;
+}
+.banner-brand-week .container-custom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.banner-brand-week .box-banner-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 15px;
+}
+.banner-brand-week .box-banner-offers {
+  display: block;
+}
+.banner-brand-week .banner-offers-item {
+  display: block;
+}
+.banner-brand-week .banner-offers-item a {
+  display: block;
+}
+.banner-brand-week .banner-offers-item img {
+  width: 100%;
+  border-radius: 8px;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .banner-brand-week .box-banner-title {
+    font-size: 16px;
+  }
+}
+
+/* Banner Offers */
+.banner-offers {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  padding: 15px 0;
+  margin-bottom: 15px;
+}
+
+.banner-offers .container-custom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.banner-offers .box-banner-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.banner-offers .box-banner-offers.banner-listing {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.banner-offers .banner-offers-item a {
+  display: block;
+}
+
+.banner-offers .banner-offers-item img {
+  width: 100%;
+  border-radius: 8px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .banner-offers .box-banner-offers.banner-listing {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .banner-offers .box-banner-title {
+    font-size: 16px;
+  }
+}
+
+/* Home News */
+.home-news {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  padding: 15px 0;
+  margin-bottom: 15px;
+}
+
+.home-news .container-custom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.home-news .title-news {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.home-news .box-listing-news {
+  overflow-x: auto;
+}
+
+.home-news .listing-news {
+  display: flex;
+  gap: 10px;
+}
+
+.home-news .item-news {
+  min-width: 280px;
+  max-width: 280px;
+}
+
+.home-news .item-news a {
+  display: block;
+  text-decoration: none;
+}
+
+.home-news .item-news img {
+  width: 100%;
+  border-radius: 8px;
+  height: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.home-news .item-news p {
+  font-size: 13px;
+  line-height: 18px;
+  color: #333;
+  margin: 8px 0 0 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.home-news .item-news a:hover p {
+  color: #00A896;
+}
+
+.home-news .show-more-news {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.home-news .show-more-news a {
+  color: #00A896;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.home-news .show-more-news a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .home-news .item-news {
+    min-width: 240px;
+    max-width: 240px;
+  }
+  
+  .home-news .title-news {
+    font-size: 16px;
+  }
+}
+
+/* Search Trend */
+.search-trend {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  padding: 15px 0;
+  margin-bottom: 15px;
+}
+
+.search-trend .container-custom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.search-trend .bottom-search__title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.search-trend .bottom-search__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.search-trend .bottom-search__container ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.search-trend .bottom-search__container li {
+  display: inline-block;
+}
+
+.search-trend .bottom-search__container a {
+  display: inline-block;
+  padding: 6px 12px;
+  background: #f5f5f5;
+  color: #333;
+  text-decoration: none;
+  font-size: 13px;
+  border-radius: 20px;
+  transition: all 0.2s;
+}
+
+.search-trend .bottom-search__container a:hover {
+  background: #00A896;
+  color: #fff;
+}

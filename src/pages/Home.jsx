@@ -5,6 +5,10 @@ import HotPromotion from '../components/HotPromotion';
 import WebOnly from '../components/WebOnly';
 import ProductList from '../components/ProductList';
 import MonopolyProduct from '../components/MonopolyProduct';
+import Bannerweek from '../components/Bannerweek';
+import BannerOffers from '../components/BannerOffers';
+import NewsList from '../components/NewsList';
+import SearchTrend from '../components/SearchTrend';
 
 function Home() {
   return (
@@ -18,6 +22,10 @@ function Home() {
           <WebOnly />
           <ProductList />
           <MonopolyProduct />
+          <Bannerweek />
+          <BannerOffers />
+          <NewsList />
+          <SearchTrend />
         </div>
       </main>
 
