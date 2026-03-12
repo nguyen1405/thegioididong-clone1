@@ -119,9 +119,9 @@ function Header() {
             {/* Logo */}
             <a href="/" className="header__logo" aria-label="logo">
               <img 
-                src="src\assets\logo1.png" 
-                alt="Thegioididong.com" 
-                width="170" 
+                src="https://drive.google.com/uc?export=view&id=1wfX08EUbLb-kGY_D5259zsIop00uZYto"
+                alt="Thegioididong.com"
+                width="170"
                 height="40"
                 className="logo-img"
               />

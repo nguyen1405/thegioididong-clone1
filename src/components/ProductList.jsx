@@ -1,16 +1,5 @@
 import { useState } from 'react';
 
-const categories = [
-  { id: 'dienthoai', name: 'Điện thoại', icon: 'https://cdn.tgdd.vn/content/category/dienthoai.png' },
-  { id: 'laptop', name: 'Laptop', icon: 'https://cdn.tgdd.vn/content/category/laptop.png' },
-  { id: 'apple', name: 'Apple', icon: 'https://cdn.tgdd.vn/content/category/apple-90x60.png' },
-  { id: 'tablet', name: 'Tablet', icon: 'https://cdn.tgdd.vn/content/category/tablet.png' },
-  { id: 'phukien', name: 'Phụ kiện', icon: 'https://cdn.tgdd.vn/content/category/phukien.png' },
-  { id: 'dongho', name: 'Đồng hồ', icon: 'https://cdn.tgdd.vn/content/category/dongho.png' },
-  { id: 'pc', name: 'PC, Máy in', icon: 'https://cdn.tgdd.vn/content/category/pc.png' },
-  { id: 'sim', name: 'Sim, Thẻ', icon: 'https://cdn.tgdd.vn/content/category/sim.png' }
-];
-
 const allProducts = [
   {
     id: 311178,
@@ -312,32 +301,13 @@ const allProducts = [
 
 function ProductList() {
   const [showAll, setShowAll] = useState(false);
-  const [activeCategory, setActiveCategory] = useState('dienthoai');
 
-  const filteredProducts = allProducts.filter(product => {
-    if (activeCategory === 'dienthoai') return product.id.toString().startsWith('34') || product.id.toString().startsWith('33');
-    if (activeCategory === 'laptop') return product.id.toString().startsWith('32') || product.id.toString().startsWith('33');
-    if (activeCategory === 'apple') return product.name.includes('iPhone') || product.name.includes('iPad') || product.name.includes('MacBook') || product.name.includes('Apple');
-    if (activeCategory === 'tablet') return product.id.toString().startsWith('52');
-    if (activeCategory === 'dongho') return product.id.toString().startsWith('70') || product.id.toString().startsWith('33');
-    return true;
-  });
+  const filteredProducts = allProducts;
 
   return (
     <section className="product-list-section">
       <div className="container-custom">
-        <div className="category-tabs">
-          {categories.map((cat) => (
-            <button
-              key={cat.id}
-              className={`category-tab ${activeCategory === cat.id ? 'active' : ''}`}
-              onClick={() => setActiveCategory(cat.id)}
-            >
-              <img src={cat.icon} alt={cat.name} />
-              <span>{cat.name}</span>
-            </button>
-          ))}
-        </div>
+        <h2 className="category-title">Gợi ý cho bạn</h2>
         <ul className={`listproduct block-list col6 ${showAll ? 'show-all' : ''}`}>
           {filteredProducts.slice(0, showAll ? filteredProducts.length : 12).map((product) => (
             <li key={product.id} className="item">
