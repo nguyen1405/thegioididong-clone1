@@ -1396,6 +1396,120 @@ main {
   margin-bottom: 15px;
 }
 
+/* Hidden items */
+.hidden {
+  display: none;
+}
+
+/* Footer logo list */
+.footer__logo-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__logo-list li {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Icon logos */
+.iconlogo-topzone,
+.iconlogo-dienmayxanh,
+.iconlogo-bachhoaxanh,
+.iconlogo-ankhang,
+.iconlogo-kids,
+.iconlogo-vieclam,
+.iconlogo-erablue {
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.iconlogo-topzone {
+  background-image: url('https://cdnv2.tgdd.vn/mwg-static/common/Common/6a/6a/6a6a116227ceaf2f407f5573f44069ec.png');
+}
+
+.iconlogo-dienmayxanh {
+  background-image: url('https://cdnv2.tgdd.vn/mwg-static/common/Common/ea/1d/ea1d0470faaea58604610926a4f45fcb.png');
+}
+
+.iconlogo-bachhoaxanh {
+  background-image: url('https://cdnv2.tgdd.vn/mwg-static/common/Common/47/1b/471b8073fdb15619b6c958e5316e7f61.png');
+}
+
+.iconlogo-ankhang {
+  background-image: url('https://cdnv2.tgdd.vn/mwg-static/common/Common/24/b3/24b303278d3d03de8b3fa3a31c2a1820.png');
+}
+
+.iconlogo-kids {
+  background-image: url('https://cdnv2.tgdd.vn/mwg-static/common/Common/f4/2a/f42aa8a01e29d247b177a997c808c990.png');
+}
+
+.iconlogo-vieclam {
+  background-image: url('https://cdnv2.tgdd.vn/mwg-static/common/Common/3e/9a/3e9a16e0f7a2e9d4f9a2b3c4d5e6f7a8.png');
+}
+
+.iconlogo-erablue {
+  background-image: url('https://cdnv2.tgdd.vn/mwg-static/common/Common/5f/8b/5f8b9c1d2e3f4a5b6c7d8e9f0a1b2c3d.png');
+}
+
+/* Social icons */
+.icon-facebook,
+.icon-youtube {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-facebook {
+  background-image: url('https://cdnv2.tgdd.vn/mwg-static/common/Common/fb-icon.png');
+}
+
+.icon-youtube {
+  background-image: url('https://cdnv2.tgdd.vn/mwg-static/common/Common/yt-icon.png');
+}
+
+/* Certify icons */
+.icon-congthuong,
+.icon-khieunai,
+.icon-protected {
+  display: inline-block;
+  width: 45px;
+  height: 28px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-congthuong {
+  background-image: url('https://cdnv2.tgdd.vn/mwg-static/common/Common/54/96/54965e9976059f689c8905bfa5696b61.png');
+}
+
+.icon-khieunai {
+  background-image: url('https://cdnv2.tgdd.vn/mwg-static/common/Common/54/96/54965e9976059f689c8905bfa5696b61.png');
+}
+
+.icon-protected {
+  background-image: url('https://cdnv2.tgdd.vn/mwg-static/common/Common/54/96/54965e9976059f689c8905bfa5696b61.png');
+}
+
+/* Arrow links */
+.arrow {
+  cursor: pointer;
+  color: #00A896 !important;
+}
+
 .footer .f-listtel__title {
   margin-bottom: 10px;
 }

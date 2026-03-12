@@ -1,120 +1,148 @@
 function Footer() {
   return (
     <footer className="footer v2024">
-      <div className="footer__top">
+      <section className="clearfix footer__top">
         <div className="footer__col">
           <div className="f-listtel">
             <p className="f-listtel__title">
               <strong>Tổng đài hỗ trợ</strong>
             </p>
             <p className="f-listtel__content">
-              <span>Gọi mua:</span> <a href="tel:1900232460">1900 232 460</a>
+              <span>Gọi mua:</span> <a href="tel:1900232460">1900 232 460</a> (8:00 - 21:30)
             </p>
             <p className="f-listtel__content">
-              <span>Khiếu nại:</span> <a href="tel:18001062">1800.1062</a>
+              <span>Khiếu nại:</span> <a href="tel:18001062">1800.1062</a> (8:00 - 21:30)
             </p>
             <p className="f-listtel__content">
-              <span>Bảo hành:</span> <a href="tel:1900232464">1900 232 464</a>
+              <span>Bảo hành:</span> <a href="tel:1900232464">1900 232 464</a> (8:00 - 21:00)
             </p>
           </div>
         </div>
-
         <div className="footer__col">
-          <p className="f-listtel__title">
-            <strong>Về công ty</strong>
-          </p>
-          <ul className="f-listmenu">
-            <li><a href="https://mwg.vn" target="_blank" rel="noopener">Giới thiệu công ty (MWG.vn)</a></li>
-            <li><a href="https://vieclam.thegioididong.com" target="_blank" rel="noopener">Tuyển dụng</a></li>
-            <li><a href="/lien-he">Gửi góp ý, khiếu nại</a></li>
-            <li><a href="/he-thong-sieu-thi">Tìm siêu thị (2.956 shop)</a></li>
-          </ul>
-        </div>
-
-        <div className="footer__col">
-          <p className="f-listtel__title">
-            <strong>Chính sách</strong>
-          </p>
-          <ul className="f-listmenu">
-            <li><a href="/chinh-sach-bao-hanh">Chính sách bảo hành</a></li>
-            <li><a href="/chinh-sach-doi-tra">Chính sách đổi trả</a></li>
-            <li><a href="/chinh-sach-bao-mat">Chính sách bảo mật</a></li>
-            <li><a href="/chinh-sach-van-chuyen">Vận chuyển</a></li>
-            <li><a href="/chinh-sach-tra-gop">Trả góp</a></li>
-            <li><a href="/dieu-khoan">Điều khoản sử dụng</a></li>
-          </ul>
-        </div>
-
-        <div className="footer__col">
-          <div className="footer__logo">
-            <p className="footer__logo-hd">
-              <strong>Website cùng tập đoàn</strong>
+          <div className="f-listtel">
+            <p className="f-listtel__title">
+              <strong>Về công ty</strong>
             </p>
-            <ul className="footer__logo-list">
-              <li className="logo-topzone">
-                <a href="https://www.topzone.vn/" target="_blank" rel="noopener" title="TopZone">
-                  <img src="https://cdnv2.tgdd.vn/mwg-static/common/Common/6a/6a/6a6a116227ceaf2f407f5573f44069ec.png" alt="TopZone" width="40" height="20" />
-                </a>
-              </li>
-              <li className="logo-dmx">
-                <a href="https://www.dienmayxanh.com/" target="_blank" rel="noopener" title="Điện máy xanh">
-                  <img src="https://cdnv2.tgdd.vn/mwg-static/common/Common/ea/1d/ea1d0470faaea58604610926a4f45fcb.png" alt="ĐMX" width="40" height="20" />
-                </a>
-              </li>
-              <li className="logo-bhx">
-                <a href="https://www.bachhoaxanh.com/" target="_blank" rel="noopener" title="Bách hóa xanh">
-                  <img src="https://cdnv2.tgdd.vn/mwg-static/common/Common/47/1b/471b8073fdb15619b6c958e5316e7f61.png" alt="BHX" width="40" height="20" />
-                </a>
-              </li>
-              <li className="logo-ankhang">
-                <a href="https://www.nhathuocankhang.com/" target="_blank" rel="noopener" title="An Khang">
-                  <img src="https://cdnv2.tgdd.vn/mwg-static/common/Common/24/b3/24b303278d3d03de8b3fa3a31c2a1820.png" alt="AnKhang" width="40" height="20" />
-                </a>
-              </li>
-              <li className="logo-kids">
-                <a href="https://www.avakids.com/" target="_blank" rel="noopener" title="AvaKids">
-                  <img src="https://cdnv2.tgdd.vn/mwg-static/common/Common/f4/2a/f42aa8a01e29d247b177a997c808c990.png" alt="Kids" width="40" height="20" />
-                </a>
-              </li>
-            </ul>
           </div>
-
+          <ul className="f-listmenu">
+            <li><a rel="nofollow" href="https://mwg.vn">Giới thiệu công ty (MWG.vn)</a></li>
+            <li><a rel="nofollow" href="https://vieclam.thegioididong.com">Tuyển dụng</a></li>
+            <li><a rel="nofollow" href="/lien-he">Gửi góp ý, khiếu nại</a></li>
+            <li><a rel="nofollow" href="/he-thong-sieu-thi-the-gioi-di-dong">Tìm siêu thị (2.956 shop)</a></li>
+          </ul>
+        </div>
+        <div className="footer__col">
+          <div className="f-listtel">
+            <p className="f-listtel__title">
+              <strong>Thông tin khác</strong>
+            </p>
+          </div>
+          <ul className="f-listmenu">
+            <li><a rel="nofollow" href="/tin-tuc/tat-tan-tat-ve-chuong-trinh-uu-dai-app-qua-tang-vip-link-tai-va-cach-su-dung-1481677#gioithieu">Tích điểm Quà tặng VIP</a></li>
+            <li><a rel="nofollow" href="/lich-su-mua-hang">Lịch sử mua hàng</a></li>
+            <li><a rel="nofollow" href="https://www.dienmayxanh.com/ctv-ban-hang?itm_source=tgdd&amp;itm_medium=footer&amp;itm_campaign=ctv-ban-hang" target="_blank">Đăng ký bán hàng CTV chiết khấu cao</a></li>
+            <li><a rel="nofollow" href="/tra-gop">Tìm hiểu về mua trả chậm</a></li>
+            <li><a rel="nofollow" href="/bao-hanh">Chính sách bảo hành</a></li>
+            <li><a href="javascript:;" className="arrow showtaga">Xem thêm</a></li>
+            <li className="hidden fmn"><a rel="nofollow" href="/chinh-sach-bao-hanh-san-pham">Chính sách đổi trả</a></li>
+            <li className="hidden fmn"><a rel="nofollow" href="/giao-hang">Giao hàng &amp; Thanh toán</a></li>
+            <li className="hidden fmn"><a rel="nofollow" href="/huong-dan-mua-hang">Hướng dẫn mua online</a></li>
+            <li className="hidden fmn"><a rel="nofollow" href="/b2b">Bán hàng doanh nghiệp</a></li>
+            <li className="hidden fmn"><a rel="nofollow" href="/phieu-mua-hang">Phiếu mua hàng</a></li>
+            <li className="hidden fmn"><a rel="nofollow" href="https://hddt.thegioididong.com">In hóa đơn điện tử</a></li>
+            <li className="hidden fmn"><a rel="nofollow" href="/tos">Quy chế hoạt động</a></li>
+            <li className="hidden fmn"><a rel="nofollow" href="/chinh-sach-xu-ly-du-lieu-ca-nhan">Chính sách xử lý dữ liệu cá nhân</a></li>
+            <li className="hidden fmn"><a rel="nofollow" href="/noi-quy-cua-hang">Nội quy cửa hàng</a></li>
+            <li className="hidden fmn"><a rel="nofollow" href="/chat-luong-phuc-vu">Chất lượng phục vụ</a></li>
+            <li className="hidden fmn"><a rel="nofollow" href="/tin-tuc/can-trong-voi-nhung-sieu-thi-thegioididong-khong-chinh-chu--683321">Cảnh báo giả mạo</a></li>
+            <li className="hidden fmn"><a rel="nofollow" href="/chinh-sach-khui-hop-apple">Chính sách khui hộp sản phẩm Apple</a></li>
+            <li className="hidden fmn"><a rel="nofollow" href="https://docs.google.com/forms/d/e/1FAIpQLSeFq-zgAusY-WWdqsVWp6Cys7ZFRx0KVYgAKFQ37KAvwXtOig/viewform" target="_blank">Hợp tác bán hàng</a></li>
+            <li className="hidden fmn"><a href="/hoi-dap">Mạng xã hội thegioididong.com</a></li>
+            <li className="hidden fmn"><a rel="nofollow" className="arrow hidetaga" href="javascript:;">Thu gọn</a></li>
+          </ul>
+        </div>
+        <div className="footer__col">
+          <div className="f-website">
+            <div className="footer__logo">
+              <p className="footer__logo-hd">Website cùng tập đoàn</p>
+              <ul className="footer__logo-list">
+                <li>
+                  <a href="https://www.topzone.vn/" target="_blank" title="Chuỗi cửa hàng cao cấp Apple" aria-label="logo topzone">
+                    <i className="iconlogo-topzone visible"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.dienmayxanh.com/" target="_blank" aria-label="logo dienmayxanh">
+                    <i className="iconlogo-dienmayxanh visible"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.bachhoaxanh.com/" target="_blank" aria-label="logo bachhoaxanh">
+                    <i className="iconlogo-bachhoaxanh visible"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.nhathuocankhang.com/" target="_blank" title="Chuỗi nhà thuốc chuẩn GPP" aria-label="logo ankhang">
+                    <i className="iconlogo-ankhang visible"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.avakids.com/" target="_blank" title="Chuỗi cửa hàng mẹ và bé" aria-label="logo avakids">
+                    <i className="iconlogo-kids visible"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://vieclam.thegioididong.com/" target="_blank" title="Trang tuyển dụng của tập đoàn Thế Giới Di Động" aria-label="logo vieclam">
+                    <i className="iconlogo-vieclam visible"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.erablue.id/" target="_blank" title="Toko Erablue Elektronik" aria-label="logo erablue">
+                    <i className="iconlogo-erablue visible"></i>
+                  </a>
+                </li>
+                <li className="logo-thodmx">
+                  <a href="https://www.thodienmayxanh.com" target="_blank" title="Dịch vụ vệ sinh, bảo dưỡng, lắp đặt máy lạnh, máy lọc nước, tủ đứng" aria-label="logo thodienmayxanh">
+                    <img src="//cdnv2.tgdd.vn/webmwg/2024/ContentMwg/images/logo_thodmx-dtv2.png" className="ls-is-cached lazyloaded" width="80" height="24" alt="logo thodmx" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
           <div className="f-social">
-            <a href="https://www.facebook.com/thegioididongcom" target="_blank" rel="noopener" className="icon-facebook">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="#1877F2">
-                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-              </svg>
-              <span>3.8M Fan</span>
+            <a href="https://www.facebook.com/thegioididongcom" className="link-fb" rel="nofollow">
+              <i className="icon-facebook"></i>
+              3886.8k Fan
             </a>
-            <a href="https://www.youtube.com/user/TGDDVideoReviews" target="_blank" rel="noopener" className="icon-youtube">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="#FF0000">
-                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-              </svg>
-              <span>876K Đăng ký</span>
+            <a href="https://www.youtube.com/user/TGDDVideoReviews" className="link-ytb" rel="nofollow">
+              <i className="icon-youtube"></i>
+              876k Đăng ký
             </a>
-            <a href="https://zalo.me/1900232460" target="_blank" rel="noopener" className="imgzalo">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="#0068FF">
-                <path d="M12 2C6.477 2 2 6.477 2 12c0 2.023.6 3.905 1.62 5.51l-1.42 5.28 5.4-1.42A9 9 0 0 0 12 22c4.523 0 8.5-3.977 8.5-8.5S16.523 2 12 2zm4.5 11.5h-3v3c0 .828-.672 1.5-1.5 1.5s-1.5-.672-1.5-1.5v-3h-3c-.828 0-1.5-.672-1.5-1.5s.672-1.5 1.5-1.5h3v-3c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5v3h3c.828 0 1.5.672 1.5 1.5s-.672 1.5-1.5 1.5z"/>
-              </svg>
-              <span>Zalo</span>
+            <a rel="nofollow" href="https://zalo.me/936590283559458736" target="_blank" className="imgzalo">
+              <img className="lazy lazyloaded" data-original="https://cdnv2.tgdd.vn/webmwg/2024/ContentMwg/images/icon_zalo.png" data-src="https://cdnv2.tgdd.vn/webmwg/2024/ContentMwg/images/icon_zalo.png" alt="zalo" width="18" height="18" loading="lazy" src="https://cdnv2.tgdd.vn/webmwg/2024/ContentMwg/images/icon_zalo.png" />
+              Zalo TGDĐ
             </a>
           </div>
-
           <div className="f-certify">
-            <a href="http://online.gov.vn/Home/WebDetails/20090" target="_blank" rel="noopener" title="Đã đăng ký Bộ Công Thương">
-              <img src="https://cdnv2.tgdd.vn/mwg-static/common/Common/54/96/54965e9976059f689c8905bfa5696b61.png" alt="Đã đăng ký" width="40" height="25" />
+            <a rel="nofollow" href="http://online.gov.vn/Home/WebDetails/20090" target="_blank" aria-label="logo congthuong">
+              <i className="icon-congthuong"></i>
             </a>
-            <a href="/giai-quyet-khieu-nai" title="Giải quyết khiếu nại">
-              <img src="https://cdnv2.tgdd.vn/mwg-static/common/Common/54/96/54965e9976059f689c8905bfa5696b61.png" alt="Khiếu nại" width="40" height="25" />
+            <a rel="nofollow" href="/tos#giai-quyet-khieu-nai" target="_blank" aria-label="logo khieunai">
+              <i className="icon-khieunai"></i>
+            </a>
+            <a rel="nofollow" className="dmca-badge" href="https://www.dmca.com/Protection/Status.aspx?ID=5b62e759-2a0c-4d86-b972-af903bfbc89d&amp;refurl=https://www.thegioididong.com/?gidzl=oa4qQ_e6WoxCNprj-Hk08C9KF6Bk6efpsLbdC-eTsdNU331dw4Y8SDW8DZFY6u5-qLnjEs42Tuzq-W-2BW" target="_blank" aria-label="logo protected">
+              <i className="icon-protected"></i>
             </a>
           </div>
         </div>
-      </div>
-
+      </section>
       <div className="copyright">
         <section>
-          <p>© 2018. Công Ty Cổ Phần Đầu Tư Điện Máy Xanh. All rights reserved.</p>
-          <p>Địa chỉ: Số 1 Điện Biên Phủ, P.4, Q.5, TP. Hồ Chí Minh. GP số 47/GP-TTĐT do sở TTTT TP. HCM cấp 28/11/2022</p>
+          <p>
+            © 2018. Công Ty Cổ Phần Đầu Tư Điện Máy Xanh. GPDKKD: 0303217354 do sở KH &amp; ĐT TP.HCM cấp ngày 02/01/2007. GPMXH: 21/GP-BTTTT do Bộ Thông Tin và Truyền Thông cấp ngày 11/01/2021.<br />
+            Địa chỉ: 128 Trần Quang Khải, P.Tân Định, TP. Hồ Chí Minh. Địa chỉ liên hệ và gửi chứng từ: Lô T2-1.2, Đường D1, P.Tăng Nhơn Phú, TP.Hồ Chí Minh. Điện thoại: 028 38125960. Email: hotrotmdt@thegioididong.com.
+            Chịu trách nhiệm nội dung: Huỳnh Văn Tốt. Đại diện ủy quyền giải quyết các vấn đề liên quan bảo vệ quyền lợi người tiêu dùng: Huỳnh Văn Tốt. Email: hotrotmdt@thegioididong.com. <a rel="nofollow" href="/thoa-thuan-su-dung-trang-mxh">Xem chính sách sử dụng</a>
+          </p>
         </section>
       </div>
     </footer>
