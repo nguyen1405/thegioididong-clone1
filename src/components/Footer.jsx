@@ -68,42 +68,42 @@ function Footer() {
               <ul className="footer__logo-list">
                 <li>
                   <a href="https://www.topzone.vn/" target="_blank" title="Chuỗi cửa hàng cao cấp Apple" aria-label="logo topzone">
-                    <i className="iconlogo-topzone visible"></i>
+                    <img src="https://cdnv2.tgdd.vn/mwg-static/common/Common/6a/6a/6a6a116227ceaf2f407f5573f44069ec.png" alt="topzone" width="40" height="20" />
                   </a>
                 </li>
                 <li>
                   <a href="https://www.dienmayxanh.com/" target="_blank" aria-label="logo dienmayxanh">
-                    <i className="iconlogo-dienmayxanh visible"></i>
+                    <img src="https://cdnv2.tgdd.vn/mwg-static/common/Common/ea/1d/ea1d0470faaea58604610926a4f45fcb.png" alt="dienmayxanh" width="40" height="20" />
                   </a>
                 </li>
                 <li>
                   <a href="https://www.bachhoaxanh.com/" target="_blank" aria-label="logo bachhoaxanh">
-                    <i className="iconlogo-bachhoaxanh visible"></i>
+                    <img src="https://cdnv2.tgdd.vn/mwg-static/common/Common/47/1b/471b8073fdb15619b6c958e5316e7f61.png" alt="bachhoaxanh" width="40" height="20" />
                   </a>
                 </li>
                 <li>
                   <a href="https://www.nhathuocankhang.com/" target="_blank" title="Chuỗi nhà thuốc chuẩn GPP" aria-label="logo ankhang">
-                    <i className="iconlogo-ankhang visible"></i>
+                    <img src="https://cdnv2.tgdd.vn/mwg-static/common/Common/24/b3/24b303278d3d03de8b3fa3a31c2a1820.png" alt="ankhang" width="40" height="20" />
                   </a>
                 </li>
                 <li>
                   <a href="https://www.avakids.com/" target="_blank" title="Chuỗi cửa hàng mẹ và bé" aria-label="logo avakids">
-                    <i className="iconlogo-kids visible"></i>
+                    <img src="https://cdnv2.tgdd.vn/mwg-static/common/Common/f4/2a/f42aa8a01e29d247b177a997c808c990.png" alt="avakids" width="40" height="20" />
                   </a>
                 </li>
                 <li>
                   <a href="https://vieclam.thegioididong.com/" target="_blank" title="Trang tuyển dụng của tập đoàn Thế Giới Di Động" aria-label="logo vieclam">
-                    <i className="iconlogo-vieclam visible"></i>
+                    <img src="https://cdnv2.tgdd.vn/mwg-static/common/Common/3e/9a/3e9a16e0f7a2e9d4f9a2b3c4d5e6f7a8.png" alt="vieclam" width="40" height="20" />
                   </a>
                 </li>
                 <li>
                   <a href="https://www.erablue.id/" target="_blank" title="Toko Erablue Elektronik" aria-label="logo erablue">
-                    <i className="iconlogo-erablue visible"></i>
+                    <img src="https://cdnv2.tgdd.vn/mwg-static/common/Common/5f/8b/5f8b9c1d2e3f4a5b6c7d8e9f0a1b2c3d.png" alt="erablue" width="40" height="20" />
                   </a>
                 </li>
                 <li className="logo-thodmx">
                   <a href="https://www.thodienmayxanh.com" target="_blank" title="Dịch vụ vệ sinh, bảo dưỡng, lắp đặt máy lạnh, máy lọc nước, tủ đứng" aria-label="logo thodienmayxanh">
-                    <img src="//cdnv2.tgdd.vn/webmwg/2024/ContentMwg/images/logo_thodmx-dtv2.png" className="ls-is-cached lazyloaded" width="80" height="24" alt="logo thodmx" />
+                    <img src="https://cdnv2.tgdd.vn/webmwg/2024/ContentMwg/images/logo_thodmx-dtv2.png" width="80" height="24" alt="logo thodmx" />
                   </a>
                 </li>
               </ul>

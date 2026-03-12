@@ -1205,14 +1205,34 @@ main {
 
 /* Footer Styles */
 .footer.v2024 {
-  background: #1A1A1A !important;
-  color: #fff !important;
+  background: #ffffff !important;
+  color: #000000 !important;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 .footer.v2024 * {
   background: transparent !important;
   color: inherit !important;
+}
+
+.footer.v2024 .f-listtel__content,
+.footer.v2024 .f-listtel__content span,
+.footer.v2024 .footer__logo-hd,
+.footer.v2024 .f-listmenu li a,
+.footer.v2024 .copyright,
+.footer.v2024 .copyright a,
+.footer.v2024 .f-social a,
+.footer.v2024 .f-social a i,
+.footer.v2024 .footer__logo-hd,
+.footer.v2024 .f-listtel__title strong {
+  color: #000000 !important;
+}
+
+.footer.v2024 .f-listtel__content a,
+.footer.v2024 .f-listmenu li a,
+.footer.v2024 .copyright a,
+.footer.v2024 .f-social a {
+  color: #000000 !important;
 }
 
 .footer__top {
