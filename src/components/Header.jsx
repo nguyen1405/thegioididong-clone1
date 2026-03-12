@@ -119,7 +119,7 @@ function Header() {
             {/* Logo */}
             <a href="/" className="header__logo" aria-label="logo">
               <img 
-                src="https://cdn.tgdd.vn/content/Logo-TheGioiDiDong-09-09-2024.png" 
+                src="src\assets\logo1.png" 
                 alt="Thegioididong.com" 
                 width="170" 
                 height="40"
