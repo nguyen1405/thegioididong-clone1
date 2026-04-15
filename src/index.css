@@ -333,6 +333,7 @@ main {
   list-style: none;
   margin: 0;
   padding: 0;
+  flex-wrap: nowrap;
 }
 
 .main-menu li {
@@ -343,15 +344,17 @@ main {
   display: flex;
   align-items: center;
   gap: 6px;
-  padding: 8px 8px;
+  padding: 5px 10px;
   color: #333;
   text-decoration: none;
-  font-size: 12px;
-  font-weight: 500;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
   transition: background-color 0.2s;
   cursor: pointer;
   border-radius: 4px;
   margin: 4px 2px;
+  white-space: nowrap;
 }
 
 .main-menu li > a:hover {
@@ -395,14 +398,13 @@ main {
 
 .main-menu li.has-list:hover .navmwg,
 .navmwg.active {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .navmwg {
   display: none;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
-  padding: 20px;
   background: #fff;
   box-shadow: 0 4px 16px rgba(0,0,0,0.15);
   max-height: 450px;
@@ -441,32 +443,44 @@ main {
   text-transform: uppercase;
 }
 
-.navmwg .item-child a {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 6px 0;
-  color: #333;
-  text-decoration: none;
-  font-size: 13px;
-  transition: color 0.2s;
-}
-
-.navmwg .item-child a:hover {
-  color: #00A896;
-}
-
-.navmwg .item-child a img {
-  width: 28px;
-  height: 28px;
-  object-fit: contain;
-}
-
 .navmwg .item-child a h3 {
   font-size: 13px;
   font-weight: 400;
   margin: 0;
   color: #333;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+
+.product-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.product-item img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+.product-item h3 {
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+  color: #333;
+  white-space: nowrap;
+}
+
+.product-item:hover h3 {
+  color: #00A896;
 }
 
 .navmwg .item-child a:hover h3 {
@@ -1092,94 +1106,87 @@ main {
   margin: 15px 0;
 }
 
-.timeline-wrapper {
+.countdown-container {
   display: flex;
   justify-content: center;
-}
-
-.listing-timeline {
-  display: flex;
-  gap: 8px;
-  overflow-x: auto;
-  justify-content: center;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
-.listing-timeline .timeline-item {
+.countdown-block {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 8px 12px;
-  background: #F2F4F7;
-  border-radius: 6px;
-  text-decoration: none;
-  min-width: 70px;
-  flex-shrink: 0;
+  padding: 12px 24px;
+  border-radius: 8px;
+  background: #d9ecff;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.3s ease;
+  min-width: 160px;
 }
 
-.listing-timeline .timeline-item:hover {
-  background: #e8e8e8;
+.countdown-block:hover {
+  background: #c2e0f5;
 }
 
-.listing-timeline .timeline-item.active {
-  background: linear-gradient(135deg, #e83a45, #ff6b6b);
+.countdown-block.active {
+  background: #ffe9d6;
 }
 
-.listing-timeline .timeline-item.active .timeline-label,
-.listing-timeline .timeline-item.active .timeline-time {
-  color: #fff;
-}
-
-.listing-timeline .timeline-label {
-  color: #666;
-  font-size: 11px;
+.countdown-label {
+  font-size: 12px;
   font-weight: 500;
+  color: #666;
+  margin-bottom: 6px;
+  transition: all 0.3s ease;
 }
 
-.listing-timeline .timeline-time {
-  color: #333;
-  font-size: 13px;
+.countdown-block.active .countdown-label {
+  color: #ff6a00;
   font-weight: 600;
-  margin-top: 2px;
 }
 
-.listing-timeline .countdown-timer {
+.countdown-timer {
   display: flex;
   align-items: center;
-  gap: 2px;
-  margin-top: 4px;
+  gap: 4px;
 }
 
-.listing-timeline .time-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.listing-timeline .time-block label {
-  background: #fff;
-  color: #e83a45;
-  padding: 2px 4px;
-  border-radius: 3px;
-  font-size: 13px;
+.time-badge {
+  background: #f0ebe5;
+  color: #333;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 16px;
   font-weight: 700;
-  min-width: 24px;
+  min-width: 28px;
   text-align: center;
 }
 
-.listing-timeline .time-block small {
-  font-size: 9px;
-  color: #fff;
-  margin-top: 2px;
+.countdown-block.active .time-badge {
+  background: #f0ebe5;
 }
 
-.listing-timeline .time-separator {
-  color: #fff;
+.time-separator {
+  color: #333;
+  font-size: 16px;
   font-weight: 700;
-  font-size: 14px;
+}
+
+.countdown-block.active .time-separator {
+  color: #ff6a00;
+}
+
+.next-time {
+  font-size: 18px;
+  font-weight: 700;
+  color: #666;
+  margin-top: 6px;
+}
+
+.countdown-block.active .next-time {
+  color: #ff6a00;
 }
 
 .readmore-btn.fl-btn {

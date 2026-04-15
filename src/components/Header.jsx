@@ -209,14 +209,16 @@ function Header() {
                       {item.megaMenu.map((col, idx) => (
                         <div key={idx} className="item-child">
                           <strong>{col.title}</strong>
-                          {col.items.map((subItem, subIdx) => (
-                            <a key={subIdx} href={subItem.href}>
-                              {subItem.img && (
-                                <img className="lazy-menu" src={subItem.img} alt="thumb menu" width="25" />
-                              )}
-                              <h3>{subItem.name}</h3>
-                            </a>
-                          ))}
+                          <div className="product-grid">
+                            {col.items.map((subItem, subIdx) => (
+                              <a key={subIdx} href={subItem.href} className="product-item">
+                                {subItem.img && (
+                                  <img className="lazy-menu" src={subItem.img} alt="thumb menu" />
+                                )}
+                                <h3>{subItem.name}</h3>
+                              </a>
+                            ))}
+                          </div>
                         </div>
                       ))}
                     </div>
