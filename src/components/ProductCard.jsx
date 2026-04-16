@@ -26,10 +26,8 @@ function ProductCard({ product }) {
 
         {product.soldQuantity !== undefined && (
           <div className="fs-contain">
-            <span className="fs-icon-wrap">
-              <span className="fs-icon">
-                <span className="fs-progress" style={{ width: `${product.soldQuantity}%` }}></span>
-              </span>
+            <span className="fs-icon">
+              <span className="fs-progress" style={{ width: `${product.soldQuantity}%` }}></span>
               <span className="fs-label">{product.soldLabel}</span>
             </span>
           </div>
