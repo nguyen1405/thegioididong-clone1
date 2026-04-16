@@ -9,7 +9,7 @@ function ProductCard({ product }) {
 
   return (
     <div className="item" data-id={product.id} data-pos={product.position}>
-      <a href={product.url} className="remain_quantity main-contain">
+      <a href={product.url} className="main-contain">
         <div className="item-img">
           <img src={product.image} alt={product.name} />
         </div>
@@ -26,15 +26,14 @@ function ProductCard({ product }) {
 
         {product.soldQuantity !== undefined && (
           <div className="fs-contain">
-            <span className="rq_count fscount">
+            <span className="fs-icon-wrap">
               <span className="fs-icon" style={{ background: `linear-gradient(90deg, #F79009 ${product.soldQuantity}%, #e0e0e0 ${product.soldQuantity}%)` }}></span>
-              <b>{product.soldLabel}</b>
+              <span className="fs-label">🔥 Còn {product.soldQuantity}/10 suất</span>
             </span>
           </div>
         )}
       </a>
       <div className="btn-buy">
-        <a href={product.url} className="see-detail">Xem chi tiết</a>
         <a href={product.buyUrl} className="buy-now">Mua ngay</a>
       </div>
     </div>
