@@ -23,6 +23,7 @@ function ProductCard({ product }) {
             <small className="discount-tag">-{discountPercent}%</small>
           </div>
         )}
+        
 
         {product.soldQuantity !== undefined && (
           <div className="fs-contain">
