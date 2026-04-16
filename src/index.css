@@ -830,7 +830,7 @@ main {
 
 .hot-promotion.homeproducts-block h3 {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 500;
   color: #000;
   margin-bottom: 15px;
 }
@@ -919,26 +919,14 @@ main {
 }
 
 .listproduct {
-  display: flex;
-  overflow-x: auto;
-  gap: 12px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
   padding: 15px 0;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
 }
 
-.listproduct::-webkit-scrollbar {
-  height: 6px;
-}
-
-.listproduct::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 3px;
-}
-
-.listproduct::-webkit-scrollbar-thumb {
-  background: #ccc;
-  border-radius: 3px;
+.listproduct .item:nth-child(n+13) {
+  display: none;
 }
 
 .listproduct .item {
@@ -993,16 +981,13 @@ main {
 }
 
 .listproduct h3 {
-  font-size: 13px;
-  line-height: 16px;
+  font: 400 14px / 18px Arial, Helvetica, sans-serif !important;
   color: #333;
-  margin-bottom: 8px;
+  margin: 8px 0;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  min-height: 32px;
-  font-weight: 400;
 }
 
 .listproduct .price {
@@ -1056,6 +1041,15 @@ main {
   width: 80px;
   border-radius: 5px;
   flex-shrink: 0;
+  background: #e0e0e0;
+  overflow: hidden;
+}
+
+.fs-progress {
+  display: block;
+  height: 100%;
+  background: #F79009;
+  border-radius: 5px;
 }
 
 .fs-label {
