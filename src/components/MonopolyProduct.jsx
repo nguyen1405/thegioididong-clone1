@@ -197,7 +197,7 @@ function MonopolyProduct() {
   return (
     <section className="monopoly-product-block">
       <div className="container-custom">
-        <h3>Lễ Hội Trả Chậm</h3>
+        <h3>Gợi ý cho bạn</h3>
         <div className="monopoly-content">
           <div className="monopoly-banner-wrap">
             <a 

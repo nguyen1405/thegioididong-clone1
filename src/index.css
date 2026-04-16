@@ -1751,8 +1751,8 @@ main {
 
 .category-title {
   font-size: 22px;
-  font-weight: 600;
-  color: #333;
+  font-weight: 700;
+  color: #111111 !important;
   padding: 12px 0;
   border-bottom: 2px solid #FFD400;
   margin-bottom: 15px;
@@ -1815,8 +1815,8 @@ main {
 }
 
 .product-list-section .item {
-  background: #fff;
-  border: 1px solid #f1f1f1;
+  background: #FFFFFF !important;
+  border: 1px solid #EEEEEE !important;
   border-radius: 8px;
   padding: 10px;
   position: relative;
@@ -1836,12 +1836,13 @@ main {
 }
 
 .product-list-section .lb-tragop {
-  background: #FFD400;
-  color: #333;
-  font-size: 11px;
+  background: #FFFFFF !important;
+  color: #0070f3 !important;
+  font-size: 10px;
   padding: 2px 6px;
   border-radius: 3px;
   display: inline-block;
+  border: 1px solid #e0e0e0 !important;
 }
 
 .product-list-section .item-img {
@@ -1869,17 +1870,18 @@ main {
 }
 
 .product-list-section .result-label span {
-  background: #FFD400;
-  color: #333;
-  font-size: 11px;
-  padding: 2px 5px;
+  background: #E53935 !important;
+  color: #fff !important;
+  font-size: 10px;
+  padding: 2px 6px;
   border-radius: 3px;
 }
 
 .product-list-section h3 {
   font-size: 13px;
   line-height: 18px;
-  color: #333;
+  color: #212121 !important;
+  font-weight: 400;
   margin: 8px 0;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -1895,7 +1897,7 @@ main {
 
 .product-list-section .item-compare span {
   font-size: 11px;
-  color: #666;
+  color: #666666 !important;
   background: #f5f5f5;
   padding: 2px 5px;
   border-radius: 3px;
@@ -1904,7 +1906,7 @@ main {
 .product-list-section .price {
   font-size: 16px;
   font-weight: 700;
-  color: #e83a45;
+  color: #D32F2F !important;
   display: block;
   margin-bottom: 5px;
 }
@@ -1918,12 +1920,12 @@ main {
 
 .product-list-section .price-old {
   font-size: 12px;
-  color: #999;
+  color: #999999 !important;
   text-decoration: line-through;
 }
 
 .product-list-section .percent {
-  background: #e83a45;
+  background: #D32F2F !important;
   color: #fff;
   font-size: 11px;
   padding: 2px 5px;
@@ -1954,7 +1956,7 @@ main {
   gap: 5px;
   margin-top: 8px;
   font-size: 11px;
-  color: #666;
+  color: #888888 !important;
 }
 
 .product-list-section .vote-txt {
@@ -1966,8 +1968,8 @@ main {
 .product-list-section .vote-txt i {
   width: 12px;
   height: 12px;
-  background: #FFD400;
-  border-radius: 2px;
+  background: #FFC107 !important;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
 }
 
 .product-list-section .vote-txt b {
@@ -2005,12 +2007,15 @@ main {
 }
 
 .product-list-section .see-more-btn {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
   width: 100%;
-  padding: 12px;
-  margin-top: 15px;
-  background: #fff;
-  border: 1px solid #e0e0e0;
+  padding: 12px 24px;
+  margin-top: 20px;
+  background: #FFFFFF;
+  border: none;
   border-radius: 4px;
   text-align: center;
   cursor: pointer;
@@ -2018,12 +2023,12 @@ main {
 }
 
 .product-list-section .see-more-btn:hover {
-  background: #f5f5f5;
+  text-decoration: underline;
 }
 
 .product-list-section .see-more-btn span {
-  color: #00A896;
-  font-size: 14px;
+  color: #0070f3 !important;
+  font-size: 16px;
   font-weight: 500;
 }
 
@@ -2062,11 +2067,88 @@ main {
 }
 
 .monopoly-product-block h3 {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
-  color: #000;
+  color: #111111 !important;
   margin-bottom: 15px;
   padding-top: 15px;
+}
+
+.monopoly-product-block .listproduct .item .price {
+  font-size: 16px;
+  font-weight: 700;
+  color: #D32F2F !important;
+  margin: 4px 0;
+}
+
+.monopoly-product-block .listproduct .item .price-old {
+  font-size: 12px;
+  color: #999999 !important;
+  text-decoration: line-through;
+}
+
+.monopoly-product-block .listproduct .item .percent {
+  background: #D32F2F !important;
+  color: #fff;
+  font-size: 11px;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+.monopoly-product-block .listproduct .item h3 {
+  font-size: 13px;
+  line-height: 18px;
+  color: #212121 !important;
+  font-weight: 400;
+  margin: 4px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.monopoly-product-block .listproduct .item .item-compare span {
+  font-size: 11px;
+  color: #666666 !important;
+  background: #f5f5f5;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+.monopoly-product-block .listproduct .item .lb-tragop {
+  background: #FFFFFF !important;
+  color: #0070f3 !important;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 3px;
+  display: inline-block;
+  border: 1px solid #e0e0e0 !important;
+}
+
+.monopoly-product-block .result-label.temp1 span {
+  background: #E53935 !important;
+  color: #fff !important;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+.monopoly-product-block .listproduct .item .vote-txt i {
+  width: 12px;
+  height: 12px;
+  background: #FFC107 !important;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.monopoly-product-block .listproduct .item .rating_Compare {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  color: #888888 !important;
+  margin-top: auto;
+  padding-top: 4px;
 }
 
 .monopoly-product-block .monopoly-content {
@@ -2157,8 +2239,8 @@ main {
 .monopoly-product-block .listproduct .item {
   min-width: 185px;
   max-width: 185px;
-  background: #fff;
-  border: 1px solid #f1f1f1;
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
   border-radius: 8px;
   padding: 12px;
   position: relative;
@@ -2238,7 +2320,8 @@ main {
 .monopoly-product-block .listproduct .item h3 {
   font-size: 13px;
   line-height: 18px;
-  color: #333;
+  color: #212121;
+  font-weight: 400;
   margin: 4px 0;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -2255,16 +2338,16 @@ main {
 
 .monopoly-product-block .listproduct .item .item-compare span {
   font-size: 11px;
-  color: #666;
+  color: #666666;
   background: #f5f5f5;
   padding: 2px 5px;
   border-radius: 3px;
 }
 
 .monopoly-product-block .listproduct .item .price {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
-  color: #e83a45;
+  color: #D32F2F;
   margin: 4px 0;
 }
 
@@ -2277,12 +2360,12 @@ main {
 
 .monopoly-product-block .listproduct .item .price-old {
   font-size: 12px;
-  color: #999;
+  color: #999999;
   text-decoration: line-through;
 }
 
 .monopoly-product-block .listproduct .item .percent {
-  background: #e83a45;
+  background: #D32F2F;
   color: #fff;
   font-size: 11px;
   padding: 2px 5px;
@@ -2304,7 +2387,7 @@ main {
   align-items: center;
   gap: 5px;
   font-size: 11px;
-  color: #666;
+  color: #888888;
   margin-top: auto;
   padding-top: 4px;
 }
@@ -2318,7 +2401,7 @@ main {
 .monopoly-product-block .listproduct .item .vote-txt i {
   width: 12px;
   height: 12px;
-  background: #FFD400;
+  background: #FFC107;
   border-radius: 2px;
 }
 
@@ -2342,27 +2425,29 @@ main {
   margin-left: 5px;
 }
 
+.monopoly-product-block .listproduct .item .lb-tragop {
+  background: #fff;
+  color: #0070f3;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 3px;
+  display: inline-block;
+  border: 1px solid #e0e0e0;
+}
+
 .monopoly-product-block .result-label.temp1 {
   display: flex;
   align-items: center;
   gap: 5px;
 }
 
-.monopoly-product-block .listproduct .item .lb-tragop {
-  background: #FFD400;
-  color: #333;
-  font-size: 10px;
-  padding: 2px 4px;
-  border-radius: 3px;
-  display: inline-block;
-}
-
 .monopoly-product-block .result-label.temp1 span {
-  background: #FFD400;
-  color: #333;
+  background: #E53935;
+  color: #fff;
   font-size: 10px;
-  padding: 2px 4px;
+  padding: 2px 6px;
   border-radius: 3px;
+  font-weight: 500;
 }
 
 /* Responsive */

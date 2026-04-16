@@ -364,13 +364,13 @@ function ProductList() {
         
         {!showAll && filteredProducts.length > 12 && (
           <button className="see-more-btn" onClick={() => setShowAll(true)}>
-            <span>Xem thêm {filteredProducts.length - 12} sản phẩm</span>
+            <span>Xem thêm {filteredProducts.length - 12} sản phẩm ▼</span>
           </button>
         )}
         
         {showAll && (
           <button className="see-more-btn" onClick={() => setShowAll(false)}>
-            <span>Thu gọn</span>
+            <span>Thu gọn ▲</span>
           </button>
         )}
       </div>
