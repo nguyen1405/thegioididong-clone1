@@ -129,7 +129,7 @@ function HotPromotion() {
                 onTimelineChange={setActiveTimeline} 
               />
               
-              <div className="box-scroll">
+              <div className="box-scroll" style={{ textAlign: 'center' }}>
                 <div className="listproduct slider-flashsale">
                   {sampleProducts.map((product) => (
                     <ProductCard key={product.id} product={product} />
