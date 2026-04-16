@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 
+import logo from '../assets/iconnew-min.png';
+
 function Header() {
   const [activeMenu, setActiveMenu] = useState(null);
   const [showMenu, setShowMenu] = useState(true);
@@ -117,15 +119,15 @@ function Header() {
         <div className="header__top">
           <div>
             {/* Logo */}
-            <a href="/" className="header__logo" aria-label="logo">
-              <img 
-                src="https://drive.google.com/uc?export=view&id=1wfX08EUbLb-kGY_D5259zsIop00uZYto"
-                alt="Thegioididong.com"
-                width="170"
-                height="40"
-                className="logo-img"
-              />
-            </a>
+            <a href="/" className="header_logo" aria-label="logo">
+            <img 
+              src={logo} 
+              alt="Thegioididong.com" 
+              width="170" 
+              height="40" 
+              className="logo-img"
+            />
+          </a>
             
             {/* Search */}
             <form action="/tim-kiem" className="header__search">
