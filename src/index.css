@@ -842,7 +842,6 @@ main {
   margin: 0;
   gap: 5px;
   border-bottom: 2px solid #e83a45;
-  overflow-x: auto;
 }
 
 .products-tabs.col9 {
@@ -2452,7 +2451,7 @@ main {
 /* Responsive */
 @media (max-width: 768px) {
   .products-tabs {
-    overflow-x: auto;
+    overflow-x: visible;
     justify-content: flex-start;
   }
   
