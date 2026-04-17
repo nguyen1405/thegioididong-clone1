@@ -869,7 +869,7 @@ main {
 }
 
 .products-tabs li:hover::after {
-  background: #F79009;
+  background: #000;
 }
 
 .products-tabs li.active-tab::after {

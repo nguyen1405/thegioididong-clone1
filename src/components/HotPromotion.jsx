@@ -109,7 +109,7 @@ function HotPromotion() {
   return (
     <div className="hot-promotion homeproducts-block">
       <div className="container-custom">
-        <h3>Khuyến mãi online</h3>
+        <h3 style={{ fontWeight: '700' }}>Khuyến mãi online</h3>
         
         <ProductsTabs activeTab={activeTab} onTabChange={setActiveTab} />
         
